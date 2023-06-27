@@ -1,0 +1,7 @@
+git+https://github.com/huggingface/peft.git@e536616888d51b453ed354a6f1e243fecb02ea08
+accelerate==0.19.0
+transformers==4.29.2
+torch==1.13.1
+bitsandbytes==0.38.1
+# peft==0.3.0
+datasets==2.12.0
