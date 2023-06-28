@@ -318,6 +318,20 @@ In this section, we will explore how we can interact with the API gateway via no
 The notebook will show you how to manage your endpoint, interact with your SageMaker endpoint API And how to use Langchain with APIGateway.
 
 ---
+
+## Clean up
+
+Once you're done with this lab, you can clean up your resources by deleting the CDK stacks.
+
+In your IDE environment, run the following command to delete the stacks.
+
+```
+cdk destory --all
+```
+
+**Note:** As the stack is not aware of any endpoint created by the endpoint manager, make sure you check that you delete any endpoint created by the endpoint manager by going to the AWS console, go to Amazon SageMaker -> Inference -> Endpoint and delete the endpoints (i.e. `demo-Falcon40B-Endpoint`)
+
+---
 ## How does the endpoint manager work?
 
 1. When the stack is provisioned for the first time, the user defined the initial required endpoint provision time in minutes (`initial_provision_time_minutes`) in the `app.py`
