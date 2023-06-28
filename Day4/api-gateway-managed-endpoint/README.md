@@ -313,6 +313,8 @@ cdk deploy ModelAsyncStack
 
 In this section, we will explore how we can interact with the API gateway via notebook. To get started, open the [`00-api_gateway_managed_endpoint.ipynb`](00-api_gateway_managed_endpoint.ipynb) in your notebook environment (i.e. Amazon SageMaker Studio) and run through the instructions in the notebook.
 
+**Note:** If you're using Amazon SageMaker Studio, set your kernel image to Data Science 3.0
+
 The notebook will show you how to manage your endpoint, interact with your SageMaker endpoint API And how to use Langchain with APIGateway.
 
 ---
