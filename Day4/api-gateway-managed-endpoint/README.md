@@ -24,7 +24,7 @@ If you prefer to run this lab from you preferred IDE, ensure that AWS CLI and CD
    - Instance type: t3.small
 
 3. Open the Cloud9 IDE
-4. In the terminal, run the following cmd to clone the repository CDK stack repository
+4. In the terminal, run the following cmd to clone the repository that contains the CDK stack we will be using for this lab.
 
     ```
     git clone https://github.com/dalacan/sagemaker-endpoint-manager.git
