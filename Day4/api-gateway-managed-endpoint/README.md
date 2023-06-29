@@ -24,7 +24,7 @@ If you prefer to run this lab from you preferred IDE, ensure that AWS CLI and CD
    - Instance type: t3.small
 
 3. Open the Cloud9 IDE
-4. In the terminal, run the following cmd to clone the repository CDK stack repository
+4. In the terminal, run the following cmd to clone the repository that contains the CDK stack we will be using for this lab.
 
     ```
     git clone https://github.com/dalacan/sagemaker-endpoint-manager.git
@@ -316,6 +316,20 @@ In this section, we will explore how we can interact with the API gateway via no
 **Note:** If you're using Amazon SageMaker Studio, set your kernel image to Data Science 3.0
 
 The notebook will show you how to manage your endpoint, interact with your SageMaker endpoint API And how to use Langchain with APIGateway.
+
+---
+
+## Clean up
+
+Once you're done with this lab, you can clean up your resources by deleting the CDK stacks.
+
+In your IDE environment, run the following command to delete the stacks.
+
+```
+cdk destory --all
+```
+
+**Note:** As the stack is not aware of any endpoint created by the endpoint manager, make sure you check that you delete any endpoint created by the endpoint manager by going to the AWS console, go to Amazon SageMaker -> Inference -> Endpoint and delete the endpoints (i.e. `demo-Falcon40B-Endpoint`)
 
 ---
 ## How does the endpoint manager work?
